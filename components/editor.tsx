@@ -2,7 +2,11 @@
 
 import { FormEvent, useState } from "react"
 import Image from "next/image"
-import imglyRemoveBackground, { Config } from "@imgly/background-removal"
+
+import { removeBackground } from '@imgly/background-removal'
+import { Config } from "@imgly/background-removal";
+
+
 import { sendGAEvent } from "@next/third-parties/google"
 import { ReactCompareSlider } from "react-compare-slider"
 import { toast } from "sonner"
@@ -76,7 +80,7 @@ export const Editor = () => {
       setDialogText("Starting...")
       setShowDialog(true)
 
-      imglyRemoveBackground(imageData!, config).then((blob: Blob) => {
+      removeBackground(imageData!, config).then((blob: Blob) => {
         // result is a blob encoded as PNG.
         // It can be converted to an URL to be used as HTMLImage.src
         const url = URL.createObjectURL(blob)

@@ -10,9 +10,9 @@ export default async function IndexPage() {
       {/* Hero */}
       <div className="group flex flex-col items-center justify-center md:w-2/4">
         <div className="mt-14 flex flex-col items-center justify-center md:mt-0 md:w-96">
-          <a
+          {/*<a
             className="mb-4 w-fit p-0 md:self-start"
-            href="https://www.producthunt.com/posts/removerized?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-removerized"
+            href="#"
             target="_blank"
           >
             <Image
@@ -23,7 +23,7 @@ export default async function IndexPage() {
               height="34"
             />
           </a>
-
+ */}
           <h1 className="animate-fade-in-up text-center text-4xl font-bold md:text-start md:text-6xl lg:text-7xl">
             <span>Free Background Remover Tool with</span>
             <br></br>

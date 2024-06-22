@@ -5,9 +5,9 @@ export const Footer = () => {
       <a
         className="hover:underline"
         target="_blank"
-        href="https://yossthedev.github.io"
+        href="https://fiit.ai"
       >
-        @yossthedev
+        @FiitAI
       </a>
       . Icons from{" "}
       <a
