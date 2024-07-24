@@ -25,7 +25,7 @@ export default async function IndexPage() {
           </a>
  */}
           <h1 className="animate-fade-in-up text-center text-4xl font-bold md:text-start md:text-6xl lg:text-7xl">
-            <span>Free Background Remover Tool with</span>
+            <span>Free Background removerized Tool with</span>
             <br></br>
             <span>AI</span>
             <span className="inline-block">

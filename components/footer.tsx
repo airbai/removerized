@@ -7,7 +7,7 @@ export const Footer = () => {
         target="_blank"
         href="https://fiit.ai"
       >
-        @FiitAI
+        @FiitAI removerized
       </a>
       . Icons from{" "}
       <a
