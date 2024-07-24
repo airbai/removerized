@@ -1,19 +1,37 @@
 {
-  "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext", "WebWorker"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "incremental": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "types": ["@serwist/next/typings"],
     "baseUrl": ".",
     "paths": {
-      "@components/*": ["src/components/*"],
-      "@layouts/*": ["src/layouts/*"],
-      "@utils/*": ["src/utils/*"]
+      "@/*": ["./*"]
     },
-    "jsx": "react-jsx",
-    "jsxImportSource": "react",
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "verbatimModuleSyntax": true,
-    "noEmit": true
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "strictNullChecks": true
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.astro"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "build/types/**/*.ts",
+    "out/types/**/*.ts"
+  ],
   "exclude": ["node_modules"]
 }
