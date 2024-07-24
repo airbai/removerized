@@ -71,5 +71,5 @@
     "typescript": "^5.4.3",
     "webpack": "^5.91.0"
   },
-  "type": "module"
+  "type": "commonjs"
 }
